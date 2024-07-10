@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    <!-- Meta Pixel Code -->
+<!-- Meta Pixel Code -->
 <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -37,10 +37,16 @@
 				</div>
                 <div class="container-sm">
                     <div class="hero-inner">
-						<div class="hero-copy">
+                        <button id="subscribe">Subscribe</button>
+                        <script type="text/javascript">
+                          $('#subscribe').click(function() {
+                            fbq('track', 'Subscribe');
+                          });
+                        </script>
+                        <div class="hero-copy">
 	                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4gLNS3nFQIh8vTugxfkLg2?utm_source=generator" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
 						</div>
+                    
                     </div>
                 </div>
             </section>
